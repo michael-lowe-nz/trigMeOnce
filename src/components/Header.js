@@ -4,8 +4,12 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <h1>Trig me once...</h1>
-        <p>Title: {this.props.title}</p>
+        <nav>
+          <ul>
+            <li className="button">trigMeOnce</li>
+            <li className="button">About</li>
+          </ul>
+        </nav>
       </div>
     );
   }
