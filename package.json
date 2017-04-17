@@ -12,7 +12,8 @@
     "react-scripts": "0.9.5",
     "redux": "^3.6.0",
     "tap-spec": "^4.1.1",
-    "tape": "^4.6.3"
+    "tape": "^4.6.3",
+    "trigonometry-calculator": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

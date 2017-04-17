@@ -25,7 +25,8 @@ test('Test that reducer can receive triangle lengths', t => {
     }
   }
   //ACT
-
   const actual = reducer(initialState, {type: 'ADD_ANGLE', payload: [1, 25]})
   //ASSERT
+  t.deepEquals(acutal, expected, 'The reducer can add angles into the state')
+  t.end()
 })

@@ -43,7 +43,7 @@ nav ul {
 }
 
 nav li {
-  padding: 20px;
+  padding: 15px;
 }
 
 .content {
@@ -54,7 +54,7 @@ nav li {
 
 .triangle {
   display: block;
-  margin: 10% auto 0;
+  margin: 5% auto 0;
   height: 200px;
 }
 
