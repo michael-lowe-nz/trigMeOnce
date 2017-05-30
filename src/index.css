@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   color: white;
-  font-weight:100;
+  /*font-weight:100;*/
 }
 
 .button {
@@ -59,6 +59,13 @@ nav li {
   position: relative;
 }
 
+.grow {
+  transition: all .2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
 button {
   margin: 0;
   padding: 10px 20px;
@@ -74,14 +81,31 @@ button:hover {
   border-color: #eee;
 }
 
-.opposite, .hypotenuse, .adjacent {
-  border: solid 5px white;
+.circle, input {
+  cursor: pointer;
+  border: solid 4px white;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-  line-height: 60px;
+  width: 70px;
+  height: 70px;
+  font-size: 35px;
+  line-height: 70px;
   text-align: center;
+}
+
+input {
+  background: none;
+  color: white;
+  transition: all .2s ease-in-out;
+}
+
+input:focus {
+  transform: scale(1.1);
+  outline: none;
+}
+
+.circle:hover, input:hover, input:focus {
+  background-color: white;
+  color:#f76b1c;
 }
 
 .calculator {

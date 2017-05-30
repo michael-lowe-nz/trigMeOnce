@@ -10,19 +10,19 @@ const root = document.getElementById('root')
 
 var initialState = {
   triangle: {
-    hypotenuse: null,
-    adjacent: null,
-    opposite: null,
+    hypotenuse: 50,
+    adjacent: 30,
+    opposite: 40,
     a: null,
     b: null,
     c: null
   }
 }
 
-const {dispatch, getState, subscribe} = createStore(reducer, initialState)
+const { dispatch, getState, subscribe } = createStore(reducer, initialState)
 
 subscribe(() => {
-  render(<App />, root)
+  render(<App state={getState()} dispatch={dispatch}/>, root)
 })
 
 dispatch({type: 'INIT'})
