@@ -1,6 +1,6 @@
-import test from 'tape'
-import freeze from 'deep-freeze'
-import reducer from '../reducer'
+const test = require('tape')
+const freeze = require('deep-freeze')
+const reducer = require('../reducer')
 
 test('passing test', t => {
   t.pass()
@@ -27,6 +27,6 @@ test('Test that reducer can receive triangle lengths', t => {
   //ACT
   const actual = reducer(initialState, {type: 'ADD_ANGLE', payload: [1, 25]})
   //ASSERT
-  t.deepEquals(acutal, expected, 'The reducer can add angles into the state')
+  t.deepEquals(actual, expected, 'The reducer can add angles into the state')
   t.end()
 })

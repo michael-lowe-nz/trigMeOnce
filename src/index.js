@@ -10,9 +10,9 @@ const root = document.getElementById('root')
 
 var initialState = {
   triangle: {
-    1: null,
-    2: null,
-    3: null,
+    hypotenuse: null,
+    adjacent: null,
+    opposite: null,
     a: null,
     b: null,
     c: null
