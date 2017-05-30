@@ -74,6 +74,16 @@ button:hover {
   border-color: #eee;
 }
 
+.opposite, .hypotenuse, .adjacent {
+  border: solid 5px white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+}
+
 .calculator {
   position: relative;
 }
@@ -81,12 +91,12 @@ button:hover {
 .hypotenuse {
   position: absolute;
   top: 0px;
-  right: 50%;
+  right: 45%;
 }
 
 .adjacent {
   position: absolute;
-  bottom: -50px;
+  bottom: -85px;
   right: 50%;
 }
 
