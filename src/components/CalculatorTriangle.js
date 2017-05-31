@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Value from './Value'
+
 
 class Calculator extends Component {
   constructor(props) {
@@ -35,9 +37,9 @@ class Calculator extends Component {
     return (
       <div className="calculator">
         <img src="triangle.svg" className="triangle" alt="triangle"></img>
-        <input maxLength="3" onChange={this.handleChangeHyp} value={this.props.state.triangle.hypotenuse}  className="circle grow hypotenuse"></input>
-        <input type="tel" maxLength="3" onChange={this.handleChangeAdj} value={this.props.state.triangle.adjacent} className="circle grow adjacent"></input>
-        <input type="tel" onChange={this.handleChangeOpp} maxLength="3" value={this.props.state.triangle.opposite} className="circle grow opposite"></input>
+        <Value state={this.props.state} dispatch={this.props.dispatch} sideType="hypotenuse" />
+        <Value state={this.props.state} dispatch={this.props.dispatch} sideType="opposite" />
+        <Value state={this.props.state} dispatch={this.props.dispatch} sideType="adjacent" />
       </div>
     )
   }

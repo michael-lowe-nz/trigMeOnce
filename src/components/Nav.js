@@ -6,8 +6,8 @@ class Nav extends Component {
       <div className="header">
         <nav>
           <ul>
-            <li className="button">trigMeOnce</li>
-            <li className="button">About</li>
+            <li className="button grow">trigMeOnce</li>
+            <li className="button grow">About</li>
           </ul>
         </nav>
       </div>

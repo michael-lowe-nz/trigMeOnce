@@ -13,6 +13,7 @@
     "deep-freeze": "0.0.1",
     "gh-pages": "^1.0.0",
     "mocha": "^3.4.2",
+    "react-edit-inline": "^1.0.8",
     "react-scripts": "0.9.5",
     "redux": "^3.6.0",
     "tap-spec": "^4.1.1",
