@@ -17,7 +17,7 @@ module.exports = ({ state, dispatch, sideType }) => {
       className={`circle grow ${sideType}`}
       activeClassName={`circle grow ${sideType}`}
       paramName="value"
-      maxLength="3"
+      maxlength="3"
     />
   )
 }

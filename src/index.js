@@ -2,9 +2,6 @@ import React from 'react';
 
 import { render } from 'react-dom';
 import { createStore } from 'redux'
-import { Provider } from 'react-redux'
-import { Router, Route, browserHistory } from 'react-router'
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 
 import App from './App';
 import CalculatorTriangle from './components/CalculatorTriangle'
