@@ -9,7 +9,6 @@ import {
 } from 'react-router-dom'
 
 import App from './App';
-import CalculatorTriangle from './components/CalculatorTriangle'
 import reducer from './reducer'
 import './index.css';
 
@@ -20,7 +19,7 @@ var initialState = {
     hypotenuse: 50,
     adjacent: 30,
     opposite: 40,
-    a: null,
+    a: 25,
     b: null,
     c: null
   }

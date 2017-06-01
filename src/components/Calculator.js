@@ -6,7 +6,7 @@ class Calculator extends Component {
   render() {
     return (
       <div className="calculator">
-        <img src="triangle.svg" className="triangle" alt="triangle"></img>
+        <img src="triangleAngle.svg" className="triangle" alt="triangle"></img>
         <Value state={this.props.state} dispatch={this.props.dispatch} sideType="hypotenuse" />
         <Value state={this.props.state} dispatch={this.props.dispatch} sideType="opposite" />
         <Value state={this.props.state} dispatch={this.props.dispatch} sideType="adjacent" />
