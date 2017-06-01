@@ -14,10 +14,10 @@ module.exports = ({ state, dispatch, sideType }) => {
     <InlineEdit
       change={handleChange}
       text={myValue}
-      className={`circle input ${sideType}`}
-      activeClassName={`circle input ${sideType}`}
+      className={`circle grow ${sideType}`}
+      activeClassName={`circle grow ${sideType}`}
       paramName="value"
-      maxLength={3}
+      maxLength="3"
     />
   )
 }

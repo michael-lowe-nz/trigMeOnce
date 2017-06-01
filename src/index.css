@@ -66,6 +66,10 @@ nav li {
   transform: scale(1.1);
 }
 
+.grow:focus {
+  transform: scale(1.1);
+}
+
 button {
   margin: 0;
   padding: 10px 20px;

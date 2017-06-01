@@ -24,25 +24,10 @@ var initialState = {
   }
 }
 
-const store = createStore(reducer, initialState)
+const { getState, dispatch, subscribe} = createStore(reducer, initialState)
 
-store.subscribe(() => {
-  render(
-    <Provider store={store}>
-      <Router history={history}>
-        <Route path="/" component={App}>
-        </Route>
-      </Router>
-    </Provider>
-    , root)
+subscribe(() => {
+  render(<App state={getState()} dispatch={dispatch}/>, root)
 })
-//   render(
-//     <Provider store={store}>
-//       <Router history={history}>
-//         <Route path="/" component={App}/>
-//       </Router>
-//     </Provider>
-//   , root
-// })
 
-store.dispatch({type: 'INIT'})
+dispatch({type: 'INIT'})
