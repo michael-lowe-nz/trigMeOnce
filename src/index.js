@@ -2,6 +2,11 @@ import React from 'react';
 
 import { render } from 'react-dom';
 import { createStore } from 'redux'
+import {
+  BrowserRouter,
+  Route,
+  Link
+} from 'react-router-dom'
 
 import App from './App';
 import CalculatorTriangle from './components/CalculatorTriangle'
@@ -24,7 +29,11 @@ var initialState = {
 const { getState, dispatch, subscribe} = createStore(reducer, initialState)
 
 subscribe(() => {
-  render(<App state={getState()} dispatch={dispatch}/>, root)
+  render(
+    <BrowserRouter>
+      <App state={getState()} dispatch={dispatch}/>
+    </BrowserRouter>
+    , root)
 })
 
 dispatch({type: 'INIT'})
