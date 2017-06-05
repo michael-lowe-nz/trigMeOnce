@@ -2,11 +2,7 @@ import React from 'react';
 
 import { render } from 'react-dom';
 import { createStore } from 'redux'
-import {
-  BrowserRouter,
-  Route,
-  Link
-} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 import App from './App';
 import reducer from './reducer'
@@ -19,8 +15,8 @@ var initialState = {
     hypotenuse: 50,
     adjacent: 30,
     opposite: 40,
-    a: 25,
-    b: null,
+    a: null,
+    b: 90,
     c: null
   }
 }

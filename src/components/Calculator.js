@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Value from './Value'
 
+import Value from './Value'
+import CalculateButton from './CalculateButton'
 
 class Calculator extends Component {
   render() {
@@ -10,6 +11,7 @@ class Calculator extends Component {
         <Value state={this.props.state} dispatch={this.props.dispatch} sideType="hypotenuse" />
         <Value state={this.props.state} dispatch={this.props.dispatch} sideType="opposite" />
         <Value state={this.props.state} dispatch={this.props.dispatch} sideType="adjacent" />
+        <CalculateButton state={this.props.state} dispatch={this.props.dispatch} />
       </div>
     )
   }

@@ -16,9 +16,17 @@ module.exports = (state, action) => {
         default:
           return newState
       }
-      newState.triangle.adjacent = payload
-      newState.triangle.opposite = payload
-      console.log('New state', newState.triangle)
+    case 'ADD_ANGLE':
+      newState.triangle.angle.a = payload
+      return newState
+    case 'ADD_TRIANGLE':
+      console.log("payload: ", payload)
+      newState.triangle.hypotenuse = payload.sides[0]
+      newState.triangle.adjacent = payload.sides[1]
+      newState.triangle.opposite = payload.sides[2]
+      newState.triangle.a = payload.angles[0]
+      newState.triangle.b = payload.angles[1]
+      newState.triangle.c = payload.angles[2]
       return newState
     default:
       return newState
